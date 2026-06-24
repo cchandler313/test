@@ -27,3 +27,5 @@ sudo systemctl status tailscaled
 ## Recommended Future State
 
 Where possible, administrative services should listen only on local or Tailscale interfaces. Public access should be reserved for services that truly need it.
+
+![Tailscale private access diagram](../images/vps-tailscale-home-network-diagram.png)
