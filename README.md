@@ -57,6 +57,10 @@ flowchart LR
 
 ---
 
+![VPS protecting home network with Tailscale](images/vps-tailscale-home-network-diagram.png)
+
+This diagram shows how the public VPS acts as the internet-facing edge while the home network remains private behind Tailscale. Public traffic reaches the VPS first, where controls like UFW, Fail2Ban, CrowdSec, and Caddy handle exposure, filtering, and routing. Private administration and internal services remain reachable through the encrypted Tailscale mesh instead of direct port forwarding.
+
 ## Repository Structure
 
 ```text
